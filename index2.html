@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curds app </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">brand</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">galary</a>
+              </li>     <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+            </ul>  
+            <form class="d-flex  " role="search">
+            
+              <button class="   btn btn-outline-success" type="submit" id="logout">logout</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</nav>
+    <div class="curd">
+        <div class="w-75 mx-auto py-5">
+            <div class="form-floating mb-3 ">
+                <input type="text" class="form-control border-0 border-bottom rounded-0"  id="productName" placeholder="productName " required>
+                <label for="productName"> product Name :</label>
+            </div>
+            <div class="form-floating mb-3 row g-4">
+                    <div class="col-sm-6 col-lg-2">
+                        <input class="form-control border-0 border-bottom rounded-0"   onkeyup="getTotal()"type="number" id="price" placeholder="price">
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <input class="form-control border-0 border-bottom rounded-0"  onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                        <input class="form-control border-0 border-bottom rounded-0"  onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                    <input  class="form-control border-0 border-bottom rounded-0"  onkeyup="getTotal()"type="number" id="discount" placeholder="discount">
+                    </div>
+                    <div class="col-sm-6 col-lg-4"> 
+                        <div  id="total" class=" tot border-bottom   rounded-0"> Total:</div>
+                    </div>
+            </div>
+            <div class="form-floating mb-3 ">
+                <input list="categories" type="text" class="form-control border-0 border-bottom rounded-0"  id="productCategory" placeholder="product Category" required>
+                <label for="productCategory "> product category :</label>
+                 <datalist id="categories">
+                    <option value="TV">
+                    <option value="mobile">
+                    <option value="labtop">
+                    <option value="Screen">
+                 </datalist>
+            </div>
+             <div class="form-floating mb-3 "> 
+                <textarea type="text" class="form-control border-0 border-bottom rounded-0"  id="productDescription" placeholder="productDescription" required> </textarea>
+                <label for=" productDescription"> product description :</label>
+            </div>
+            <div class="form-floating mb-3 ">
+                <input accept="image/*" type="file" class="form-control border-0 border-bottom rounded-0"  id="productImage" placeholder="product Image " required>
+                <label for="productImage"> product image :</label>
+            </div>
+          <button id="addbtn" onclick="addProdect()" class="btn  mt-3 btn-create text-white rounded-0">Add Product</button>
+          <button id="updatebtn"   onclick="UpdateProduct()" class="btn d-none mt-3 btn-create text-white rounded-0"> Update Prodect</button>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="Search position-relative ">
+            <input id="SearchInput" oninput="searchProduct()" type="text" class=" form-control   border-0 rounded-5 Search-btn"  placeholder="Search by name " >
+            <span class="position-absolute " ><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+        </div>
+       
+        <div id="rowData" class="row py-5 g-4">
+         
+            
+            </div>
+
+   
+    </div>
+    
+     
+
+
+
+
+
+
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/master2.js"></script>
+</body>
+</html>

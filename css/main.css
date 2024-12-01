@@ -1,0 +1,89 @@
+.tot{
+    margin-top: 11px;
+    
+    /* border-radius: 50; */
+}
+
+ input:focus,
+ textarea:focus{
+   
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px #FF8C9E !important;
+    
+ }
+ .card-img img{
+    width: 100%;
+ }
+ .card-desc{
+    top:10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FF8C9E;
+   
+ }
+.btn{
+   border: 1px solid #FF8C9E;
+   color: #FF8C9E !important;
+   transition: all 0.5s !important;
+}
+.btn-my {
+   background-color: #FF8C9E;
+   color: #fff !important;
+   transition: all 0.5s !important;
+}
+.btn:hover,
+
+.btn-my:hover{
+   background-color: #FF8C9E;
+   color: #fff !important;
+   border: none !important;
+}
+
+
+.btn-create{
+   width: 100%;
+   background-color: #FF8C9E;
+   color:#fff !important;
+   border-radius: 20px !important;
+   transition: all 0.5s !important;
+}
+.btn-create:hover{
+   background-color: #fff;
+   color: #FF8C9E !important;
+   border: 1px solid #FF8C9E !important;
+}
+.Search span{
+   top:5px;
+   left: 15px;
+   color: #FF8C9E;
+   font-size: 15px;
+
+  
+}
+.Search{
+   width: 60%;
+   margin: auto;
+  
+}
+
+.Search input[type="text" i] {
+    padding-block: 5px !important;
+    padding-inline: 40px !important;
+}
+.Search-btn{
+   background-color: #fff!important;
+   color: #FF8C9E!important;
+   border: 1px solid #FF8C9E !important;
+  
+}
+
+.Search-btn:focus{
+   border: none !important;
+   border-radius: 20px !important;
+}
+.navbar{
+
+    padding: 10px;
+    box-shadow: 0 0 10px #FF8C9E;
+}
